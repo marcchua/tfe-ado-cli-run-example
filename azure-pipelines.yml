@@ -19,7 +19,7 @@ steps:
     
     cat <<EOF > /home/vsts/.terraformrc
     credentials "app.terraform.io" {
-      token = "$(TFE_TOKEN)""
+      token = "$(TFE_TOKEN)"
     }
     EOF
 
