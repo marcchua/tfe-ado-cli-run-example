@@ -16,5 +16,6 @@ steps:
     unzip https://releases.hashicorp.com/terraform/0.12.24/terraform_0.12.24_linux_amd64.zip terraform
     terraform init
     terraform plan
+    terraform apply
     echo See https://aka.ms/yaml
   displayName: 'Test Terraform'
