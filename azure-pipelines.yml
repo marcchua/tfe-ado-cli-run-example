@@ -28,6 +28,10 @@ steps:
 
     cat /home/vsts/.terraform.d/credentials.tfrc.json
 
+
+    ls -la
+    pwd
+    
     terraform init
     terraform plan
     terraform apply
