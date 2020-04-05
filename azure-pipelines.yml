@@ -16,8 +16,8 @@ steps:
     unzip terraform_0.12.24_linux_amd64.zip terraform
 
     echo HOME=$HOME
-    mkdir /home/marc/.terraform.d
-    cat <<EOF > /home/marc/.terraform.d/credentials.tfrc.json
+    mkdir /home/vsts/.terraform.d
+    cat <<EOF > /home/vsts/.terraform.d/credentials.tfrc.json
     {
     "credentials": {
     "app.terraform.io": {
