@@ -16,7 +16,7 @@ steps:
     unzip terraform_0.12.24_linux_amd64.zip terraform
 
     echo HOME=$HOME
-    
+    mkdir /home/marc/.terraform.d
     cat <<EOF > /home/marc/.terraform.d/credentials.tfrc.json
     {
     "credentials": {
@@ -26,7 +26,7 @@ steps:
     }
     EOF
 
-    cat /home/vsts/.terraformrc
+    cat /home/marc/.terraform.d/credentials.tfrc.json
     terraform login
     terraform init
     terraform plan
