@@ -17,7 +17,7 @@ steps:
 
     cat <<EOF > .terraformrc
     credentials "app.terraform.io" {
-      token = $TFE_TOKEN
+      token = "$(TFE_TOKEN)""
     }
     EOF
 
