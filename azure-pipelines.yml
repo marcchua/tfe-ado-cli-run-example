@@ -34,6 +34,6 @@ steps:
     
     terraform init
     terraform plan
-    terraform apply
+    terraform apply -auto-approve
     echo See https://aka.ms/yaml
   displayName: 'Test Terraform'
