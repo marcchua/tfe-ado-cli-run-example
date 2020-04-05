@@ -15,6 +15,8 @@ steps:
     curl -Os https://releases.hashicorp.com/terraform/0.12.24/terraform_0.12.24_linux_amd64.zip
     unzip terraform_0.12.24_linux_amd64.zip terraform
 
+    echo HOME=$HOME
+    
     cat <<EOF > .terraformrc
     credentials "app.terraform.io" {
       token = "$(TFE_TOKEN)""
