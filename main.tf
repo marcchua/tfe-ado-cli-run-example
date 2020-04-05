@@ -27,7 +27,7 @@ resource "random_pet" "server2" {
 }
 
 resource "local_file" "random" {                                                   
-  content     = random_pet.server.id}                                       
+  content     = random_pet.server.id                                     
   filename = "${path.module}/random.txt"                                         
 }
 
