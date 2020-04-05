@@ -6,7 +6,7 @@ terraform {
     organization = "marcdemo"
 
     workspaces {
-      name = "tfe-ado-cli-run-example"
+      name = "tfe-ado-cli-run-example2"
     }
   }
 
