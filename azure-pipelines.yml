@@ -17,9 +17,12 @@ steps:
 
     echo HOME=$HOME
     
-    cat <<EOF > /home/vsts/.terraformrc
-    credentials "app.terraform.io" {
-      token = "$(TFE_TOKEN)"
+    cat <<EOF > /home/marc/.terraform.d/credentials.tfrc.json
+    {
+    "credentials": {
+    "app.terraform.io": {
+      "token": "$(TFE_TOKEN)"
+      }
     }
     EOF
 
