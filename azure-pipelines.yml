@@ -27,7 +27,7 @@ steps:
     EOF
 
     cat /home/marc/.terraform.d/credentials.tfrc.json
-    terraform login
+
     terraform init
     terraform plan
     terraform apply
