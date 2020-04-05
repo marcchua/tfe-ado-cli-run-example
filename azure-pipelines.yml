@@ -23,8 +23,8 @@ steps:
     }
     EOF
 
-    cat .terraformrc
-    # terraform login
+    cat /home/vsts/.terraformrc
+    terraform login
     terraform init
     terraform plan
     terraform apply
