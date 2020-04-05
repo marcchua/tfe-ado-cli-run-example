@@ -19,18 +19,22 @@ variable "name_length" {
 }
 
 resource "random_pet" "server" {
-  length = "${var.name_length}"
+  length = var.name_length
+}
+
+resource "random_pet" "server2" {
+  length = var.name_length
 }
 
 resource "local_file" "random" {                                                   
-  content     = "${random_pet.server.id}"                                        
+  content     = random_pet.server.id}                                       
   filename = "${path.module}/random.txt"                                         
 }
 
 resource "null_resource" "cluster" {}
 
 output "name" {
-  value = "${random_pet.server.id}"
+  value = random_pet.server.id
 }
 
 
